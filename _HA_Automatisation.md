@@ -82,6 +82,7 @@ Exemples :
 Une fois l'application configurée, Home Assistant crée automatiquement un service.
 
 Pour le retrouver :
+
 **Outils de développement → Actions**
 
 Cherchez :
