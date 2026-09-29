@@ -84,3 +84,36 @@ Cherchez :
 
 ```text
 notify.mobile_app_mon_smartphone
+```
+
+# Exemple
+
+## Exemple 1 : Notification de test
+
+Créer une nouvelle automatisation :
+
+Paramètres → Automatisations et scènes → Créer une automatisation
+
+Choisir : 
+**Créer une automatisation vide**
+YAML :
+```text
+alias: Test notification iPhone
+description: ""
+trigger:
+  - platform: time
+    at: "20:00:00"
+
+condition: []
+
+action:
+  - service: notify.mobile_app_iphone_mickael
+    data:
+      title: "Home Assistant"
+      message: "Ceci est un test de notification."
+
+mode: single
+```
+Résultat :
+
+À 20h00, une notification apparaît sur l'iPhone.
