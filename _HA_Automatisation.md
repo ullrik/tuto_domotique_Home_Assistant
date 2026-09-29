@@ -226,7 +226,7 @@ La partie Déclencheur (Trigger) et Conditions (facultatif) sont ignorés et la 
 
 Aller dans :
 
-Outils de développement → Actions
+Paramètres → Outils de développement → Actions
 
 Service :
 ```
