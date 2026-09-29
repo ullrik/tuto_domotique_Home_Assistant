@@ -100,7 +100,7 @@ Choisir :
 
 YAML :
 ```text
-alias: Test notification iPhone
+alias: Test notification smartphone
 description: ""
 trigger:
   - platform: time
@@ -109,7 +109,7 @@ trigger:
 condition: []
 
 action:
-  - service: notify.mobile_app_iphone_mickael
+  - service: notify.mobile_app_mon_smartphone
     data:
       title: "Home Assistant"
       message: "Ceci est un test de notification."
@@ -119,3 +119,101 @@ mode: single
 Résultat :
 
 À 20h00, une notification apparaît sur l'iPhone.
+
+## Exemple 2 : Notification lors de l'ouverture d'une porte
+
+Supposons que votre capteur Zigbee soit :
+```
+binary_sensor.porte_entree_contact
+```
+
+Choisir : 
+
+**Créer une automatisation vide**
+
+YAML :
+```text
+alias: Alerte ouverture porte
+description: ""
+
+trigger:
+  - platform: state
+    entity_id: binary_sensor.porte_entree_contact
+    to: "on"
+
+condition: []
+
+action:
+  - service: notify.mobile_app_mon_smartphone
+    data:
+      title: "🚪 Porte d'entrée"
+      message: "La porte d'entrée vient d'être ouverte."
+
+mode: single
+```
+Résultat :
+
+A l'ouverture de la porte (en question), une notification apparaît sur l'iPhone.
+
+## Exemple 3 : Notification uniquement lorsqu'il n'y a personne
+
+Supposons :
+```
+binary_sensor.porte_entree_contact
+person.martin
+```
+
+Choisir : 
+
+**Créer une automatisation vide**
+
+YAML :
+```text
+alias: Porte ouverte en votre absence
+
+trigger:
+  - platform: state
+    entity_id: binary_sensor.porte_entree_contact
+    to: "on"
+
+condition:
+  - condition: state
+    entity_id: person.martin
+    state: "not_home"
+
+action:
+  - service: notify.mobile_app_mon_smartphone
+    data:
+      title: "⚠️ Alerte"
+      message: "La porte d'entrée a été ouverte alors que vous êtes absent."
+
+mode: single
+```
+Résultat :
+
+A l'ouverture de la porte (en question) et que la personne n'est pas présente au domicile, une notification apparaît sur l'iPhone.
+
+## Tester une notification sans créer d'automatisation
+
+Aller dans :
+
+Outils de développement → Actions
+
+Service :
+
+```
+notify.mobile_app_mon_smartphone
+```
+
+Données : 
+
+```
+message: "Message de test"
+title: "Home Assistant"
+```
+
+Puis cliquer :
+
+**Exécuter l'action**
+
+Si vous recevez la notification, tout est correctement configuré.
