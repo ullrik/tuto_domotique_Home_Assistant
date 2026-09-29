@@ -51,6 +51,14 @@ Exemple :
 
 http://192.168.1.50:8123
 
+ou 
+
+https://NOM_DE_DOMAINE.XXX
+
+Exemple : 
+
+https://nom_de_domaine.fr
+
 ---
 
 # Accès depuis un téléphone
