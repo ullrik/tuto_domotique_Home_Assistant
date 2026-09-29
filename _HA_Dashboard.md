@@ -989,7 +989,7 @@ Une fois à l'aise avec les dashboards de base, HACS permet d'ajouter des cartes
 Pour quelqu'un qui débute avec Home Assistant, je recommande particulièrement Mushroom car les cartes sont modernes, simples à configurer et très lisibles sur smartphone et tablette.
 
 Exemple :
-```
+```yaml
 type: custom:mushroom-entity-card
 entity: sensor.temperature_salon
 name: Salon
