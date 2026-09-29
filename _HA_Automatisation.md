@@ -194,7 +194,7 @@ Résultat :
 A l'ouverture de la porte (en question) et que la personne n'est pas présente au domicile, une notification apparaît sur l'iPhone.
 
 <details>
-<summary><strong>Tester une notification sans créer d'automatisation<strong></summary>
+<summary>## Tester une notification sans créer d'automatisation</summary>
 
 Aller dans :
 
