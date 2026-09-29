@@ -83,4 +83,4 @@ Pour le retrouver :
 Cherchez :
 
 ```text
-notify.mobile_app_mon_iphone
+notify.mobile_app_mon_smartphone
