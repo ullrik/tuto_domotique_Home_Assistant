@@ -34,6 +34,11 @@ Vous devez y voir un appareil correspondant à votre iPhone/Android.
 
 ---
 
+# Accès aux automatisations
+
+Aller dans :
+Paramètres → Automatisations et scènes
+
 # Comprendre le principe d'une automatisation
 
 Une automatisation est composée de trois parties :
@@ -196,6 +201,17 @@ mode: single
 
 Résultat :
 A l'ouverture de la porte (en question) et que la personne n'est pas présente au domicile, une notification apparaît sur l'iPhone.
+</details>
+
+## Tester une automatisation créée
+<details>
+<summary>Afficher le détail</summary>
+
+Soit sur la ligne de l'automatisation, soir dans une automatisation :
+Cliquer sur les 3 petits points ( ⋮ ) > Exécuter les actions
+
+Résultat :
+La partie Déclencheur (Trigger) et Conditions (facultatif) sont ignorés et la partie Actions est exécutée.
 </details>
 
 ## Tester une notification sans créer d'automatisation
