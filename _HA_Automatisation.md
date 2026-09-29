@@ -100,7 +100,7 @@ notify.mobile_app_mon_smartphone
   
 Créer une nouvelle automatisation :
 
-Paramètres → Automatisations et scènes → Créer une automatisation
+Paramètres → Automatisations et scènes → <strong>+</strong> Créer une automatisation
 
 Choisir : 
 
