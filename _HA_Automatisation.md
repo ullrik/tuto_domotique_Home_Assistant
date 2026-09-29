@@ -22,7 +22,7 @@ Avant de commencer :
 
 ✅ Home Assistant fonctionne correctement.
 
-✅ L'application Home Assistant est installée sur votre iPhone.
+✅ L'application Home Assistant est installée sur votre iPhone/Android.
 
 ✅ Vous êtes connecté à votre instance Home Assistant depuis l'application.
 
@@ -30,7 +30,7 @@ Avant de commencer :
 
 **Paramètres → Appareils et Services → Mobile App**
 
-Vous devez y voir un appareil correspondant à votre iPhone.
+Vous devez y voir un appareil correspondant à votre iPhone/Android.
 
 ---
 
