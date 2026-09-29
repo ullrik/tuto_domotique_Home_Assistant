@@ -123,7 +123,7 @@ mode: single
 Résultat :
 
 À 20h00, une notification apparaît sur l'iPhone.
-<\details>
+</details>
 
 ## Exemple 2 : Notification lors de l'ouverture d'une porte
 <details>
@@ -161,7 +161,7 @@ mode: single
 Résultat :
 
 A l'ouverture de la porte (en question), une notification apparaît sur l'iPhone.
-<\details>
+</details>
 
 ## Exemple 3 : Notification uniquement lorsqu'il n'y a personne
 <details>
@@ -202,7 +202,7 @@ mode: single
 Résultat :
 
 A l'ouverture de la porte (en question) et que la personne n'est pas présente au domicile, une notification apparaît sur l'iPhone.
-<\details>
+</details>
 
 ## Tester une notification sans créer d'automatisation
 <details>
