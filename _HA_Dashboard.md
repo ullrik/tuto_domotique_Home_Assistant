@@ -166,6 +166,8 @@ Maintenance          mdi:tools
 Zigbee               mdi:zigbee
 ```
 
+Retrouver l'ensemble des icônes mdi sur ce lien : https://pictogrammers.com/library/mdi/
+
 ---
 
 # 6. Choisir le type de vue
