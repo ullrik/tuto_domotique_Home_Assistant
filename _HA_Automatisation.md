@@ -77,11 +77,9 @@ Exemples :
 Une fois l'application configurée, Home Assistant crée automatiquement un service.
 
 Pour le retrouver :
-
 **Outils de développement → Actions**
 
 Cherchez :
-
 ```text
 notify.mobile_app_mon_smartphone
 ```
@@ -95,11 +93,9 @@ notify.mobile_app_mon_smartphone
 <summary>Afficher le détail</summary>
   
 Créer une nouvelle automatisation :
-
 Paramètres → Automatisations et scènes → Créer une automatisation
 
 Choisir : 
-
 **Créer une automatisation vide**
 
 YAML :
@@ -120,8 +116,8 @@ action:
 
 mode: single
 ```
-Résultat :
 
+Résultat :
 À 20h00, une notification apparaît sur l'iPhone.
 </details>
 
@@ -135,7 +131,6 @@ binary_sensor.porte_entree_contact
 ```
 
 Choisir : 
-
 **Créer une automatisation vide**
 
 YAML :
@@ -158,8 +153,8 @@ action:
 
 mode: single
 ```
-Résultat :
 
+Résultat :
 A l'ouverture de la porte (en question), une notification apparaît sur l'iPhone.
 </details>
 
@@ -174,7 +169,6 @@ person.martin
 ```
 
 Choisir : 
-
 **Créer une automatisation vide**
 
 YAML :
@@ -199,8 +193,8 @@ action:
 
 mode: single
 ```
-Résultat :
 
+Résultat :
 A l'ouverture de la porte (en question) et que la personne n'est pas présente au domicile, une notification apparaît sur l'iPhone.
 </details>
 
@@ -209,17 +203,14 @@ A l'ouverture de la porte (en question) et que la personne n'est pas présente a
 <summary>Afficher le détail</summary>
 
 Aller dans :
-
 Outils de développement → Actions
 
 Service :
-
 ```
 notify.mobile_app_mon_smartphone
 ```
 
 Données : 
-
 ```
 message: "Message de test"
 title: "Home Assistant"
