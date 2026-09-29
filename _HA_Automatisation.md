@@ -98,9 +98,11 @@ notify.mobile_app_mon_smartphone
 <summary>Afficher le détail</summary>
   
 Créer une nouvelle automatisation :
+
 Paramètres → Automatisations et scènes → Créer une automatisation
 
 Choisir : 
+
 **Créer une automatisation vide**
 
 YAML :
@@ -136,6 +138,7 @@ binary_sensor.porte_entree_contact
 ```
 
 Choisir : 
+
 **Créer une automatisation vide**
 
 YAML :
@@ -174,6 +177,7 @@ person.martin
 ```
 
 Choisir : 
+
 **Créer une automatisation vide**
 
 YAML :
@@ -208,6 +212,7 @@ A l'ouverture de la porte (en question) et que la personne n'est pas présente a
 <summary>Afficher le détail</summary>
 
 Soit sur la ligne de l'automatisation, soir dans une automatisation :
+
 Cliquer sur les 3 petits points ( ⋮ ) > Exécuter les actions
 
 Résultat :
@@ -219,6 +224,7 @@ La partie Déclencheur (Trigger) et Conditions (facultatif) sont ignorés et la 
 <summary>Afficher le détail</summary>
 
 Aller dans :
+
 Outils de développement → Actions
 
 Service :
