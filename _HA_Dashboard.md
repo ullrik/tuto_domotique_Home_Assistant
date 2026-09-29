@@ -649,18 +649,11 @@ switch.prise_salon
 
 Pour trouver une entité :
 
-```text
-Paramètres
-→ Appareils et services
-→ Entités
-```
+***Paramètres → Appareils et services → Entités**
 
 Il est également possible d'utiliser :
 
-```text
-Outils de développement
-→ États
-```
+***Outils de développement → États***
 
 Rechercher ensuite un mot correspondant à l'équipement :
 
