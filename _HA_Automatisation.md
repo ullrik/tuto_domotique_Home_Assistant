@@ -72,7 +72,7 @@ Exemples :
 
 ---
 
-# Identifier le service de notification de votre iPhone
+# Identifier le service de notification de votre iPhone/Android
 
 Une fois l'application configurée, Home Assistant crée automatiquement un service.
 
