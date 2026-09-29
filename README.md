@@ -1,131 +1,216 @@
-# Guide d'utilisation Home Assistant
+# Guide Utilisateur Home Assistant
 
 Bienvenue !
 
-Cette installation permet de superviser la maison grâce à Home Assistant et à différents équipements connectés.
+Cette installation domotique permet de surveiller et gérer différents équipements de la maison depuis un ordinateur ou un smartphone.
 
 ---
 
-# 1. À quoi sert cette installation ?
+# Architecture de l'installation
 
-Le Raspberry Pi exécute Home Assistant, une plateforme de domotique qui centralise :
+L'installation est composée de :
 
-- Les capteurs de porte
-- Les équipements Zigbee
-- L'alarme (Alarmo)
-- Les futurs équipements connectés
+- Un Raspberry Pi
+- Un disque dur externe
+- Home Assistant OS
+- Une clé Zigbee
+- Zigbee2MQTT
+- Plusieurs capteurs Zigbee
 
-L'installation fonctionne localement dans la maison.
+Le Raspberry Pi fonctionne 24h/24.
+
+⚠️ Ne jamais débrancher le Raspberry Pi ou le disque dur sans raison.
 
 ---
 
-# 2. Accéder à Home Assistant
+# À quoi sert Home Assistant ?
 
-Depuis un ordinateur :
+Home Assistant centralise toute la domotique de la maison :
+
+- Surveillance des portes
+- Gestion de l'alarme
+- Consultation des capteurs
+- Réception des notifications
+- Historique des événements
+
+C'est le "cerveau" de toute l'installation.
+
+---
+
+# Accès depuis un ordinateur
+
+Adresse locale :
 
 http://homeassistant.local:8123
 
-Ou utilisez l'adresse IP communiquée lors de l'installation.
+ou
 
-Depuis un smartphone :
+http://ADRESSE_IP_DU_RASPBERRY:8123
 
-- Installer l'application Home Assistant
-- Android :
-  - Google Play Store
-- iPhone :
-  - App Store
+Exemple :
 
-Se connecter avec :
-
-- Nom d'utilisateur : XXXXX
-- Mot de passe : XXXXX
+http://192.168.1.50:8123
 
 ---
 
-# 3. Tableau de bord principal
+# Accès depuis un téléphone
 
-Le tableau de bord permet de consulter :
+Installer l'application :
 
-- L'état des portes
-- Les équipements Zigbee
-- L'état de l'alarme
-- Les informations générales de la maison
+- Home Assistant Android
+- Home Assistant iPhone
 
----
+Puis se connecter avec :
 
-# 4. Comprendre les capteurs de porte
+- Identifiant
+- Mot de passe
 
-Les capteurs surveillent l'ouverture et la fermeture des portes.
-
-États possibles :
-
-- Fermé
-- Ouvert
-- Indisponible (problème de communication ou pile faible)
-
-Si un capteur apparaît souvent indisponible :
-
-- Vérifier la pile
-- Vérifier qu'il n'a pas été déplacé
+fournis lors de l'installation.
 
 ---
 
-# 5. Recevoir des notifications
+# Tableau de bord
 
-Selon la configuration :
+Le tableau de bord affiche :
 
-- Notification sur smartphone
-- E-mail
-- Autres alertes
+## Etat de l'alarme
 
-Les notifications permettent d'être informé rapidement en cas d'événement important.
+Permet :
+
+- d'armer
+- de désarmer
+- de voir l'état actuel
 
 ---
 
-# 6. En cas de panne
+## Capteurs de portes
+
+Etat possible :
+
+✅ Fermé
+
+🚪 Ouvert
+
+⚠️ Indisponible
+
+---
+
+## Historique
+
+Permet de retrouver :
+
+- les ouvertures
+- les fermetures
+- les déclenchements d'alarme
+- les notifications
+
+---
+
+# Comprendre les couleurs
+
+Vert :
+
+- fonctionnement normal
+
+Orange :
+
+- attention requise
+
+Rouge :
+
+- alarme ou anomalie
+
+Gris :
+
+- appareil hors ligne
+
+---
+
+# Vérification quotidienne
+
+Une vérification rapide consiste à regarder :
+
+- que l'alarme soit dans le bon état
+- qu'aucun capteur ne soit indisponible
+- qu'aucune pile ne soit faible
+
+Durée : moins d'une minute.
+
+---
+
+# Remplacement d'une pile
+
+Si Home Assistant indique une pile faible :
+
+1. Ouvrir le capteur
+2. Remplacer la pile par le même modèle
+3. Refermer correctement
+
+Attendre quelques minutes.
+
+Le niveau se met généralement à jour automatiquement.
+
+---
+
+# Que faire si le système n'est plus accessible ?
 
 Vérifier dans l'ordre :
 
-1. Alimentation du Raspberry Pi
-2. Connexion Internet
-3. Réseau Wi-Fi
-4. Présence du disque dur externe
+1. Internet fonctionne-t-il ?
+2. Le Wi-Fi fonctionne-t-il ?
+3. Le Raspberry Pi est-il allumé ?
+4. Le disque dur est-il branché ?
 
-Redémarrer le Raspberry Pi uniquement si nécessaire.
+Si tout semble normal mais que Home Assistant reste inaccessible :
 
----
-
-# 7. Bonnes pratiques
-
-Ne jamais :
-
-- Débrancher brutalement le Raspberry Pi
-- Retirer le disque dur à chaud
-- Réinitialiser un équipement Zigbee sans conseil préalable
-
-Toujours :
-
-- Utiliser l'arrêt/reboot depuis Home Assistant
-- Maintenir le Raspberry Pi alimenté en permanence
+Contacter l'administrateur.
 
 ---
 
-# 8. Sauvegardes
+# Redémarrage de Home Assistant
 
-Le système réalise des sauvegardes de sa configuration.
+Uniquement si demandé.
 
-Ces sauvegardes permettent de restaurer l'installation en cas de problème matériel.
+Paramètres → Système → Redémarrer
+
+Ne jamais couper l'alimentation directement.
 
 ---
 
-# 9. Demander de l'aide
+# Sauvegardes
 
-En cas de problème :
+Le système réalise des sauvegardes régulières.
 
-Décrire :
+Ces sauvegardes permettent de restaurer l'installation en cas de panne.
 
-- Le problème rencontré
-- Les messages affichés
-- La date et l'heure de l'incident
+Aucune action n'est nécessaire au quotidien.
 
-Une capture d'écran est toujours utile.
+---
+
+# Bonnes pratiques
+
+✅ Laisser l'installation allumée en permanence
+
+✅ Vérifier les notifications reçues
+
+✅ Remplacer rapidement une pile faible
+
+❌ Débrancher la clé Zigbee
+
+❌ Réinitialiser un capteur
+
+❌ Modifier la configuration sans connaître l'impact
+
+---
+
+# Quand demander de l'aide ?
+
+Si :
+
+- plusieurs capteurs deviennent indisponibles
+- l'alarme ne fonctionne plus
+- Home Assistant ne démarre plus
+- un message d'erreur apparaît régulièrement
+
+Faire une capture d'écran si possible.
+``
