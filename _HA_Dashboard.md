@@ -976,7 +976,8 @@ Cette organisation reste simple à utiliser tout en permettant d'ajouter progres
 ---
 
 ## Utiliser HACS et les cartes personnalisées (niveau intermédiaire)
-
+<details>
+<summary>Afficher le détail</summary>
 Une fois à l'aise avec les dashboards de base, HACS permet d'ajouter des cartes très populaires :
 
 - Mushroom Cards
@@ -996,3 +997,4 @@ icon: mdi:home-thermometer
 ```
 
 Le résultat est généralement beaucoup plus esthétique que les cartes natives de Home Assistant.
+</details>
