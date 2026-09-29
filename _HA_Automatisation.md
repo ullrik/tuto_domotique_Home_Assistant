@@ -37,7 +37,7 @@ Vous devez y voir un appareil correspondant à votre iPhone/Android.
 # Accès aux automatisations
 
 Aller dans :
-Paramètres → Automatisations et scènes
+**Paramètres → Automatisations et scènes**
 
 # Comprendre le principe d'une automatisation
 
@@ -83,7 +83,7 @@ Une fois l'application configurée, Home Assistant crée automatiquement un serv
 
 Pour le retrouver :
 
-**Outils de développement → Actions**
+**Paramètres → Outils de développement → Actions**
 
 Cherchez :
 ```text
