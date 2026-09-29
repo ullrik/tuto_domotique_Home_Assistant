@@ -95,7 +95,9 @@ Créer une nouvelle automatisation :
 Paramètres → Automatisations et scènes → Créer une automatisation
 
 Choisir : 
+
 **Créer une automatisation vide**
+
 YAML :
 ```text
 alias: Test notification iPhone
