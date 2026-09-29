@@ -86,10 +86,14 @@ Cherchez :
 notify.mobile_app_mon_smartphone
 ```
 
+---
+
 # Exemple
 
 ## Exemple 1 : Notification de test
-
+<details>
+<summary>Afficher le détail</summary>
+  
 Créer une nouvelle automatisation :
 
 Paramètres → Automatisations et scènes → Créer une automatisation
@@ -119,9 +123,12 @@ mode: single
 Résultat :
 
 À 20h00, une notification apparaît sur l'iPhone.
+<\details>
 
 ## Exemple 2 : Notification lors de l'ouverture d'une porte
-
+<details>
+<summary>Afficher le détail</summary>
+  
 Supposons que votre capteur Zigbee soit :
 ```
 binary_sensor.porte_entree_contact
@@ -154,9 +161,12 @@ mode: single
 Résultat :
 
 A l'ouverture de la porte (en question), une notification apparaît sur l'iPhone.
+<\details>
 
 ## Exemple 3 : Notification uniquement lorsqu'il n'y a personne
-
+<details>
+<summary>Afficher le détail</summary>
+  
 Supposons :
 ```
 binary_sensor.porte_entree_contact
@@ -192,9 +202,11 @@ mode: single
 Résultat :
 
 A l'ouverture de la porte (en question) et que la personne n'est pas présente au domicile, une notification apparaît sur l'iPhone.
+<\details>
 
+## Tester une notification sans créer d'automatisation
 <details>
-<summary><strong>Tester une notification sans créer d'automatisation</strong></summary>
+<summary>Afficher le détail</summary>
 
 Aller dans :
 
