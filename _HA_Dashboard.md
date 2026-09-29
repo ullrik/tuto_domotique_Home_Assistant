@@ -972,3 +972,27 @@ Une organisation simple et adaptée à une installation Home Assistant avec Zigb
 ```
 
 Cette organisation reste simple à utiliser tout en permettant d'ajouter progressivement de nouveaux équipements.
+
+---
+
+## Utiliser HACS et les cartes personnalisées (niveau intermédiaire)
+
+Une fois à l'aise avec les dashboards de base, HACS permet d'ajouter des cartes très populaires :
+
+- Mushroom Cards
+- Button Card
+- Mini Graph Card
+- ApexCharts Card
+- Auto Entities
+
+Pour quelqu'un qui débute avec Home Assistant, je recommande particulièrement Mushroom car les cartes sont modernes, simples à configurer et très lisibles sur smartphone et tablette.
+
+Exemple :
+```
+type: custom:mushroom-entity-card
+entity: sensor.temperature_salon
+name: Salon
+icon: mdi:home-thermometer
+```
+
+Le résultat est généralement beaucoup plus esthétique que les cartes natives de Home Assistant.
