@@ -39,9 +39,10 @@ C'est le "cerveau" de toute l'installation.
 
 # Accès depuis un ordinateur
 
-| Adresse locale |                                     | http://homeassistant.local:8123 |
-| Exemple locale | http://ADRESSE_IP_DU_RASPBERRY:8123 | http://192.168.1.50:8123        |
-| Exemple Web    | https://NOM_DE_DOMAINE.XXX          | https://nom_de_domaine.fr       |
+| Adresse locale |  | http://homeassistant.local:8123/ |
+| :--- | :--- | :--- |
+| Exemple locale | http://ADRESSE_IP_DU_RASPBERRY:8123 | http://192.168.1.50:8123/ |
+| Exemple Web | https://NOM_DE_DOMAINE.XXX | https://nom_de_domaine.fr |
 
 ---
 
