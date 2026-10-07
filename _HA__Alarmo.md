@@ -26,53 +26,23 @@ Exemple de vue Alarmo
 
 # Etats de l'alarme
 
-## Désarmée
+| Modes | Protection | Détails |
+|:-------- |:--------|:-------- |
+| Désarmée | N/A   | Aucune surveillance active    |
+| Activé (Absence) | Partielle   | A utiliser lorsque personne n'est présent    |
+| Activé (Présence) | Complète   | A utiliser lorsque des personnes sont présent (ex : douche, sieste)   |
+| Activé (nuit) | Partielle   | Permet généralement de dormir tout en gardant certaines zones protégées. <br/> Selon la configuration installée.  |
+| Activé (vacances) | Complète   | A utiliser lorsque personne n'est présent sur plusieurs jours   |
+| Activé (exception personnalisé) | A définir   | Selon la configuration installée    |
 
-Mode normal.
+Pour chaque mode, il est possible :
+- Activer ou désactiver le mode
+- Définir un délai pour sortir
+- Définir un délai pour rentrer
+- Définir un délai de fonctionnement pour réarmement
+- (une liste de capteurs actifs) *
 
-Aucune surveillance active.
-
----
-
-## Activé (Absence)
-
-Protection complète de la maison.
-
-A utiliser lorsque personne n'est présent.
-
----
-
-## Activé (Présence)
-
-Protection partielle.
-
-A utiliser lorsque des personnes sont présent (ex : douche, sieste)
-
----
-
-## Activé (nuit)
-
-Protection partielle.
-
-Permet généralement de dormir tout en gardant certaines zones protégées.
-
-Selon la configuration installée.
-
----
-
-## Activé (vacances)
-
-Protection complète de la maison.
-
-A utiliser lorsque personne n'est présent.
-
----
-
-## Activé (exception personnalisé)
-
-Protection à définir.
-
-Selon la configuration installée.
+* la liste des capteurs actifs sont définit via la configuration des capteurs. C'est dans le menu "Capteurs" et sélection d'un capteur ou l'on peut définir sur quel mode il sera actif.
 
 ---
 
