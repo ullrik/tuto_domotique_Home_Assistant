@@ -34,7 +34,7 @@ Aucune surveillance active.
 
 ---
 
-## Armement total
+## Activé (Absence)
 
 Protection complète de la maison.
 
@@ -42,11 +42,35 @@ A utiliser lorsque personne n'est présent.
 
 ---
 
-## Armement nuit
+## Activé (Présence)
+
+Protection partielle.
+
+A utiliser lorsque des personnes sont présent (ex : douche, sieste)
+
+---
+
+## Activé (nuit)
 
 Protection partielle.
 
 Permet généralement de dormir tout en gardant certaines zones protégées.
+
+Selon la configuration installée.
+
+---
+
+## Activé (vacances)
+
+Protection complète de la maison.
+
+A utiliser lorsque personne n'est présent.
+
+---
+
+## Activé (exception personnalisé)
+
+Protection à définir.
 
 Selon la configuration installée.
 
@@ -57,7 +81,7 @@ Selon la configuration installée.
 1. Ouvrir Home Assistant
 2. Ouvrir la carte Alarmo
 3. Sélectionner le mode souhaité
-4. Saisir le code si demandé
+4. Saisir le code si demandé (optionnel)
 
 L'armement démarre alors.
 
@@ -98,7 +122,7 @@ Il faut désarmer avant la fin du délai.
 
 1. Ouvrir Home Assistant
 2. Carte Alarmo
-3. Saisir le code
+3. Saisir le code (optionnel)
 4. Désarmer
 
 L'alarme repasse immédiatement en mode inactif.
@@ -115,6 +139,8 @@ Causes fréquentes :
 
 Vérifier les messages affichés.
 
+A noter : il est possible de configurer pour qu'un sensor/capteur ne bloque pas l'armement de l'alarme. 
+
 ---
 
 # Déclenchement d'alarme
@@ -130,19 +156,6 @@ Le système :
 - change d'état
 - conserve un historique
 - envoie éventuellement une notification
-
----
-
-# Historique des événements
-
-Permet de voir :
-
-- heure d'armement
-- heure de désarmement
-- capteur déclencheur
-- utilisateur concerné
-
-Utile pour comprendre un incident.
 
 ---
 
