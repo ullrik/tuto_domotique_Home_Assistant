@@ -19,6 +19,9 @@ Lorsque l'alarme est désactivée :
 - les ouvertures restent visibles
 - aucune alerte n'est déclenchée
 
+Exemple de vue Alarmo
+![image Alarmo Page d'accueil](/images/alarmo_page_accueil.png)
+
 ---
 
 # Etats de l'alarme
